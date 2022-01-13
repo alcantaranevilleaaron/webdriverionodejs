@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "run cucumber wdio",
+        "type": "node",
+        "request": "launch",
+        "args": ["tests/config/wdio.conf.debug.js", "--spec", "${file}"],
+        "cwd": "${workspaceFolder}",
+        "autoAttachChildProcesses": true,
+        "program": "${workspaceRoot}/tests/node_modules/@wdio/cli/bin/wdio.js",
+        "console": "integratedTerminal"
+      }
+    ]
+  }
